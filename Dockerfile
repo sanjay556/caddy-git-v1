@@ -18,7 +18,7 @@ RUN adduser -D -u 500 www \
     && chown -R www /var/www
 
 WORKDIR /var/www
-EXPOSE  2015
+EXPOSE  2019
 USER    www
 
 CMD ["/usr/bin/caddy", "--conf", "/etc/Caddyfile", "--log", "stdout"]

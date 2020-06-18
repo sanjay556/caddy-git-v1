@@ -12,7 +12,7 @@ RUN curl --silent --show-error --fail --location \
 
 
 
-COPY ./Caddyfile /etc/Caddyfile
+# COPY ./Caddyfile /etc/Caddyfile
 RUN adduser -D -u 500 www \
     && mkdir -p /var/www \
     && chown -R www /var/www

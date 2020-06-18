@@ -1,0 +1,19 @@
+# Caddyfile
+:2019
+{
+  gzip
+
+  git  {
+    repo http://gitlablex.ibasis.net/root/foo-bar.git
+    branch master
+    clone_args --recurse-submodules
+    pull_args --recurse-submodules
+    interval 86400
+    hook /_webhook webcaddy
+    hook_type gitlab
+  }
+
+  root /var/www
+
+  tls off
+}

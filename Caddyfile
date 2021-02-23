@@ -4,7 +4,7 @@
   gzip
 
   git  {
-    repo http://gitlablex.ibasis.net/root/foo-bar.git
+    repo http://gitlab.myco.net/root/foo-bar.git
     branch master
     clone_args --recurse-submodules
     pull_args --recurse-submodules

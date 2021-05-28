@@ -1,0 +1,20 @@
+# Caddyfile
+:2019
+{
+  gzip
+
+  git  {
+    repo http://gitlablex.myco.net/devops/applications-test.git
+    branch master
+    clone_args --recurse-submodules
+    pull_args --recurse-submodules
+    interval 86400
+    hook /_webhook webcaddy
+    hook_type gitlab
+    then sed -i  "s/#REL#/ -1 /" index.html
+  }
+
+  root /var/www
+
+  tls off
+}

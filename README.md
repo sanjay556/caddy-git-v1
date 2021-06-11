@@ -25,6 +25,7 @@ apps.myco.net  {
 ```
 
 project using subfolder
+86400 means once per day 
 ```
 git {
 	repo     git@github.com:user/myproject

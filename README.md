@@ -24,3 +24,13 @@ apps.myco.net  {
 }
 ```
 
+project using subfolder
+```
+git {
+	repo     git@github.com:user/myproject
+	branch   v1.0
+	key      /home/user/.ssh/id_rsa
+	path     subfolder
+	interval 86400
+}
+```
